@@ -1,0 +1,86 @@
+\documentclass[11pt,subeqn]{article}
+
+\usepackage{fullpage}
+\usepackage{mathtools}
+\usepackage{cleveref}
+\usepackage[normalem]{ulem}
+\usepackage[pdftex]{graphicx}
+\usepackage{geometry}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage{array}
+\usepackage{titling}
+\usepackage{biblatex}
+\usepackage{titlesec}
+
+\bibliography{References.bib}
+\bibliography{Co-I_Funding.bib}
+\bibliography{PI_Funding.bib}
+
+\geometry{headsep=30pt,vmargin={0.5in,1.in},hmargin={1.in,1.2in}}
+
+\newcounter{cite_counter}
+
+\newcommand{\pic}{[\addtocounter{cite_counter}{1}\arabic{cite_counter}] }
+\newcommand{\longtabled}{\begin{longtable}{p{0.15\textwidth} p{0.85\textwidth}}}
+\newcommand{\HPC}{HPC\textsuperscript{2}}
+
+\renewcommand{\arraystretch}{1.3}
+
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large}
+
+\begin{document}
+
+\begin{center}
+\input{Header}
+\end{center}
+
+\subsection*{Education}
+\input{Education}
+
+\subsection*{Appointments}
+\input{Appointments}
+
+\subsection*{Publications}
+\input{Publications}
+
+\subsection*{Funding}
+\input{Funding}
+
+\subsection*{Awards and Honors}
+\input{Awards_Honors}
+
+\subsection*{Invited Talks}
+\input{Invited_Talks}
+
+\subsection*{Conference Activity/Participation}
+\input{Conference_Activity}
+
+%\subsection*{Campus or Departmental Talks}
+%\input{Campus_Talks}
+
+\input{Teaching}
+
+\input{Research_Experience}
+
+\input{Professional_Service}
+
+\input{University_Service}
+
+%\subsection*{Extracurricular University Service}
+%\input{Extracurricular}
+
+%\subsection*{Community Involvement/Outreach}
+%\input{Community_Outreach}
+
+%\subsection*{Related Professional Skills}
+%\input{Related_Skills}
+
+\subsection*{Professional Memberships/Affiliations}
+\input{Professional_Memberships}
+
+%\subsection*{References}
+%\input{References}
+\end{document}
