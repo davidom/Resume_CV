@@ -1,4 +1,4 @@
-\documentclass[11pt,subeqn]{article}
+\documentclass[11pt]{article}
 
 \usepackage{fullpage}
 \usepackage{mathtools}
@@ -11,12 +11,9 @@
 \usepackage{url}
 \usepackage{array}
 \usepackage{titling}
-\usepackage{biblatex}
+%\usepackage{biblatex}
+\usepackage{bibentry}
 \usepackage{titlesec}
-
-\bibliography{References.bib}
-\bibliography{Co-I_Funding.bib}
-\bibliography{PI_Funding.bib}
 
 \geometry{headsep=30pt,vmargin={0.5in,1.in},hmargin={1.in,1.2in}}
 
@@ -32,6 +29,9 @@
 \titleformat*{\subsubsection}{\large}
 
 \begin{document}
+
+\nobibliography{References.bib,Co-I_Funding.bib,PI_Funding.bib}
+\bibliographystyle{plain}
 
 \begin{center}
 \input{Header}
@@ -83,4 +83,5 @@
 
 %\subsection*{References}
 %\input{References}
+
 \end{document}
